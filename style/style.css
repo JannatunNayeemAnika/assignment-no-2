@@ -233,7 +233,7 @@ main{
 
 }
 .promo-box {
-      position: relative;
+      
       overflow: hidden;
       border-radius: 14px;
       width: 367px;
@@ -265,7 +265,7 @@ main{
       display: block;
 }
 .promo-right-text{
-    position: absolute;
+    
     top: 160px;
     left: 150px;
     color: rgb(255, 255, 255);
@@ -283,7 +283,7 @@ main{
     font-size: 28px;
 }
 .promo-text {
-      position: absolute;
+      
       top: 45px;
       left: 80px;
       color: white;
