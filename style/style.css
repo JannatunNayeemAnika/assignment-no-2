@@ -200,7 +200,7 @@ main{
   z-index: 1;
 
 }
-.latest-deals{
+/* .latest-deals{
     text-align: center;
     margin-top: 133.88px;
 }
@@ -233,7 +233,7 @@ main{
 
 }
 .promo-box {
-      
+      position: relative;
       overflow: hidden;
       border-radius: 14px;
       width: 367px;
@@ -265,7 +265,7 @@ main{
       display: block;
 }
 .promo-right-text{
-    
+    position: absolute;
     top: 160px;
     left: 150px;
     color: rgb(255, 255, 255);
@@ -283,7 +283,7 @@ main{
     font-size: 28px;
 }
 .promo-text {
-      
+      position: absolute;
       top: 45px;
       left: 80px;
       color: white;
@@ -299,7 +299,100 @@ main{
     font-weight: bold;
     font-family: sans-serif;
     font-size: 16px;
- }
+ } */
+  .latest-deal {
+  
+  
+  display: flex;
+  gap: 20px;
+  
+}
+.deal-head {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.para2{
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 0;
+  font-family: sans-serif;
+}
+
+.deal {
+  text-align: center;
+}
+.latest-deal {
+  padding: 60px 20px;
+}
+
+.image-wrapper {
+  
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 120px;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left-column img {
+  width: 367px;
+  height: 201px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.right-image img {
+  width: 753px;
+  height: 423px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.image-box {
+  position: relative;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  color: white;
+  z-index: 5;
+}
+.text-overlay h3 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+.shop-btn {
+  color: white;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.h-31 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: serif;
+  margin-bottom: 5px;
+}
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(50%);
+  border-radius: 14px;
+}
+
+
+/* ekhne sesh */
  .subscribe-section {
       background:url(../assets/news-letter-bg.png) no-repeat center center/cover ;
       padding:199px 305px;
@@ -411,20 +504,24 @@ main{
   .banner-title{
     font-size: 36px;
     line-height: 1.2;
+
   }
   .banner-description{
     font-size: 16px;
   }
   .banner-main img{
-    width: 100%;
+    
+    margin: auto;
+    margin: 0px;
     height: auto;
+    
   }
   .plant-grid{
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 5px;
+    padding: 0px;
     height: auto;
   }
   .card{
@@ -439,6 +536,9 @@ main{
   }
   .plant-head {
     font-size: 30px;
+  }
+  .plant-descreption{
+    font-size: 14px;
   }
   .flower-container{
     flex-direction: column;
@@ -457,47 +557,69 @@ main{
     display: none;
   }
   .flower-text{
-    padding: 0 16px;
+    
     gap: 16px;
     text-align: left;
     align-items: flex-start;
   }
   .flower-text h2{
-    font-size: 32px;
+    font-size: 27px;
     line-height: 1.2;
-
+  }
+  .responsive-break {
+    display: none;
   }
   .flower-text ul{
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 24px;
+    text-align: center;
   }
   .flower-text li{
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
+  /* start */
   .latest-deal {
-    margin:0;
-    padding:0;
+    margin: 0px auto;
+    padding: 0 10px;
     flex-direction: column;
     gap: 16px;
+  }
+  .right-image h2{
+    font-size: 22px;
+  }
+  .para2{
+    font-size: 14px;
+  }
+  .deal{
 
   }
-  .discount{
+
+
+  .image-wrapper {
     flex-direction: column;
     align-items: center;
-     
   }
+
+  .left-column,
+  .right-image {
+    width: 100%;
+  }
+
+  .right-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-column img {
+    width: 100%;
+    height: auto;
+  }
+  .image-box img.img2{}
   
-    .promo-box {
-        height: 200px;
-    }
-    
-    .promo-text h4 {
-        font-size: 24px;
-    }
-    
-    .promo-text a {
-        font-size: 14px;
-    }
+
+  
+  
+  /* end */
     .subscribe-section {
     padding: 60px 20px;
     text-align: center;
